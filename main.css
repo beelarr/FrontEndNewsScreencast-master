@@ -1,0 +1,163 @@
+/****************************
+*
+*        Front-end News! Stylesheet
+*
+*        White:      #fff
+*        Indigo:     #3f51b5
+*        Indigo Dark: #303f9f
+         Light blue   #c5cea9
+         Pink         #ff4081
+         Gray light:  #b6b6b6
+         Gray med:    #727272
+*        Gray dark:   #212121
+*
+*
+****************************************
+Base
+****************************************
+body {
+  color: #212121
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+h1, h2, h3, h4, h5 {
+
+}
+
+p {
+
+}
+
+a {
+  color: #ff4081
+  transition: .2s ease-in-out;
+}
+a:active,
+a:hover,
+a:focus {
+  color: #212121;
+}
+
+ol, ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+li{
+  list-style-type: none;
+
+}
+
+****************************************
+Hero
+****************************************
+.hero{
+  background-color: #3f51b5;
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 20px 0;
+  text-align; center;
+}
+
+****************************************
+Logo
+****************************************
+.logo {
+  font-size: 34px;
+  font-weight; bold;
+  text-transform: uppercase;
+
+}
+
+****************************************
+News
+****************************************
+.news-item{
+  border-bottom: 1px solid #212121;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.news-link{
+  color: #3f51b5;
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.news-meta-item {
+  display: inline;
+  margin-right: 15px;
+
+}
+****************************************
+Container
+****************************************
+.container {
+  maring; 0 auto;
+  max-width: 800px;
+
+}
+
+
+****************************************
+States
+****************************************
+.is-liked {
+  animation: flash 2sec;
+}
+.is-visible {
+  height: auto
+  opacity: 1;
+  visibility: visible;
+}
+
+****************************************
+Form
+****************************************
+
+.form{
+  height: 0;
+  margin-bottom: 20px;
+  opacity: 0;
+  visiblity: hidden;
+
+}
+.form.is-visible {
+  height: auto
+  opacity: 1;
+  transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+  visibility: visible;
+
+}
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+for-input {
+  border: 1px solid #212121;
+  border-radius: 5px
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+****************************************
+Animation
+****************************************
+@keyframes flash {
+  from, 50%, to {
+    opacity: 0;
+}
+  25%, 75% {
+    opacity: 1;
+}
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Front-end News</<title>
+    <meta charset='utf-8' />
+    <link rel="https://fonts.googleapis.com/css?family=Montserrat:700" />
+    <link rel="https://fonts.googleapis.com/css?family=Lato:400,400i,700" />
+    <link rel="stylesheet" href="normalize.css"/>
+    link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+<header class='hero'>
+  <div class='container'>
+<p class=logo>Front-end News!</p>
+  </div>
+</header>
+<main class = 'content'>
+  <div class='container'>
+
+    <header class='subheader'>
+      <h1>Latest News</h1>
+      <p>The latest link in the developer community. <a class='js-add-link' href="#">Add a link now!</a></p>
+      <form class='form js-form'>
+        <label class='form-label' for="form-link-input">Add a story:</label>
+        <input class='form-input' type="text" name="form-link-input" value="Submit"/>
+      </form>
+      </header>
+
+    <ol class='news'>
+        <li class='news-item'>
+            <a class='news-link' href="#">Frontend Design</a>
+            <ul class='news-meta'>
+              <li class='news-meta-item'>
+                <em>Posted by:</em>
+                <a href="#">Dan Denney</a>
+              </li>
+              <li class='news-meta-item'>
+                <a href="#">2 comments</a>
+              </li>
+              <li class='news-meta-item'>
+                <a class ='js-like' href="#">Like this story!</a>
+              </li>
+            </ul>
+        </li>
+        <li class='news-item'>
+            <a class='news-link' href="#">Backend Design</a>
+            <ul class='news-meta'>
+              <li class='news-meta-item'>
+                <em>Posted by:</em>
+                <a href="#">Robert Shultz</a>
+              </li>
+              <li class='news-meta-item'>
+                <a href="#">2 comments</a>
+              </li>
+              <li class='news-meta-item'>
+                <a class ='js-like' href="#">Like this story!</a>
+              </li>
+            </ul>
+        </li>
+        <li class='news-item'>
+            <a class='news-link' href="#">Python Coding</a>
+            <ul class='news-meta'>
+              <li class='news-meta-item'>
+                <em>Posted by:</em>
+                <a href="#">Mini Mouse</a>
+              </li>
+              <li class='news-meta-item'>
+                <a href="#">2 comments</a>
+              </li>
+              <li class='news-meta-item'>
+                <a class ='js-like' href="#">Like this story!</a>
+              </li>
+            </ul>
+        </li>
+        <li class='news-item'>
+            <a class='news-link' href="#">Django Developments</a>
+            <ul class='news-meta'>
+              <li class='news-meta-item'>
+                <em>Posted by:</em>
+                <a href="#">Bob Jones</a>
+              </li>
+              <li class='news-meta-item'>
+                <a href="#">2 comments</a>
+              </li>
+              <li class='news-meta-item'>
+                <a class ='js-like' href="#">Like this story!</a>
+              </li>
+            </ul>
+        </li>
+    </ol>
+  </div>
+</main>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
